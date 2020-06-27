@@ -1,3 +1,5 @@
+//import * as math from "js/math"
+
 //Funciones
 function sayHello(name){
 	alert("Hola, " + name);
@@ -316,6 +318,30 @@ const all = [...my_obj]
 .reduce((i, d) => i + d);
 console.log(all);
 
+//Módulos
+//console.log(`2p = + ${math.sum(math.pi, math.pi)}`)
+
+//Métodos
+[4,5,1,8,2,0].filter(function(x){
+	return x > 8
+})[0];
+[4,5,1,8,2,0].find(x => x > 8);
+[4,5,1,8,2,0].findIndex(x => x > 8);
+console.log(Array(8 + 1).join("Henry"));
+console.log("felipe".repeat(8));
+
+//Metodos Busqueda de strings
+"HenryFelipe".indexOf("Henry") === 0;
+"HenryFelipe".indexOf("Henry") === (4 - "Henry".length);
+"HenryFelipe".indexOf("ryFe") !== -1;
+"HenryFelipe".indexOf("enr", 1) !== -1;
+"HenryFelipe".indexOf("enr", 2) !== -1;
+
+"HenryFelipe".startsWith("Henry", 0);
+"HenryFelipe".endsWith("Henry", 4);
+"HenryFelipe".includes("ryFe");
+"HenryFelipe".includes("enr",1);
+"HenryFelipe".includes("ryFe",2);
 
 
 
